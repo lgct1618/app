@@ -1,0 +1,18 @@
+<!-- template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exibição de Produtos</title>
+</head>
+<body>
+    <h1>Produtos</h1>
+    {% for elemento in elementos %}
+        <div>
+            <h2>{{ elemento.nome_do_produto }}</h2>
+            <img src="{{ elemento.imagem.url }}" alt="Imagem">
+            <p>{{ elemento.descricao }}</p>
+            <p>{{ elemento.preparacao }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% load static %}
+{% block content %}
+<center><h2>{{ categoria.nome }}</h2></center>
+
+
+  {% for produto in produtos %}
+  <div class='container'>
+    <div class='box'>
+    
+    <section class="videos_container">
+      <a href="{% url 'produtos:produto_detail' produto.nome_do_produto|custom_slugify %}">
+      <p><img src="{{ produto.imagem.url }}" alt="Imagem"></p>
+    </section>
+      <section class="videos_container">
+    <p>{{ produto.nome_do_produto }}</a></p>
+    </section>
+  </div>
+</div>
+  {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class='container'>
+<div class='box'>
+
+<section class="videos_container">
+<h3>{{ produto.nome_do_produto }}</h3>
+</section>
+
+<section class='videos_container'>
+    <img src="{{ produto.imagem.url }}" alt="Imagem">
+</section>
+
+<section class="videos_container">
+<p>Descrição: {{ produto.descricao }}</p>
+</section>
+
+<section class="videos_container">
+    <p>Conservação: {{ produto.como_conservar}}</p>
+</section>
+
+<section class="videos_container">
+    <p>Data de fabricação: {{produto.data_de_fabricacao_produto}}</p>
+</section>
+
+<section class="videos_container">
+    <p>Data de vencimento: {{produto.data_vencimento_produto}}</p>
+</section>
+
+</div>
+</div>
+<footer>
+    <p>SQR V 0.01A</p>
+</footer>
+<!-- Outras informações do produto -->
+{% endblock %}

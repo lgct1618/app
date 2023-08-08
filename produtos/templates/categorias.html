@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% load static %}
+{% block content %}
+
+  {% for categoria in categorias %}
+      <div class='container'>
+        <div class='box'>
+        
+        <section class="videos_container">
+        <li><a href="{% url 'produtos:produtos_por_categoria' categoria.nome|custom_slugify %}">{{ categoria.nome }}</a></li>
+        </section>
+        </div>
+      </div>
+      {% endfor %}
+{% endblock %}
