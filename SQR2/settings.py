@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)fiq%^p!84x2m)ka%4%w^p#*%-14evl2ic3%=us_(%+azozy)l'
+SECRET_KEY = 'django-7jgff4434-)fiq%^p!84x2m)ka%4%w^p#*%-14evl2ic3%=us_(%+azozy)l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'lgct1618.pythonanywhere.com']
 
 
 # Application definition
@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'SQR2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'DbPadrao-super-master',
-        "USER": "super-master",
-        "PASSWORD": "",
-        "HOST": "localhost",
-        "PORT": "5432",
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'lgct1618$emporiotaruma',
+        "USER": "lgct1618",
+        "PASSWORD": "mOARSEU!!1618",
+        "HOST": "lgct1618.mysql.pythonanywhere-services.com",
+        "PORT": "3306",
     }
 }
 
@@ -123,9 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, 'static')
+#]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -137,3 +137,4 @@ MEDIA_URL = '/media/'
 
 # Path where media is stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
