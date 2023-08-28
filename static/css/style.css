@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box !important;
+    color: inherit !important;
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    height: 1000px;
+}
+
+
+.w100{width: 100% !important;}
+.w80{width: 80% !important;}
+
+header{
+    background-color: white;
+}
+
+header .navbar{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header .navbar div form input{
+    height: 36px !important;
+    width: 70%;
+    margin-right: 5px;
+
+    border-radius: 5px;
+    padding-left: 5px;
+    border: none;
+
+    -webkit-box-shadow: 1px 2px 7px 6px rgba(0,0,0,0.45); 
+    box-shadow: 1px 2px 7px 6px rgba(0,0,0,0.45);
+}
+
+header .navbar div form button{
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+
+    background-color:#039232  ;
+
+    -webkit-box-shadow: 1px 2px 7px 6px rgba(0,0,0,0.45); 
+    box-shadow: 1px 2px 7px 6px rgba(0,0,0,0.45);
+}
+
+header .navbar div form button ion-icon{
+    color: white !important;
+}
+
+header .navbar .navbar-brand img{
+    width: 150px;
+}header .navbar .navbar-brand{ 
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header .navbar .navbar-nav{
+    margin-top: 10px;
+
+    border-top: 2px solid #039232;
+    border-bottom: 2px solid #039232;
+}
+
+header .navbar .navbar-nav #links .nav-link{
+    font-size: 1.1rem;
+    color: #039232 !important;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+header .navbar .navbar-nav .wppIcon{
+    background-color: green;
+    border-radius: 50%;
+
+    color: white !important;
+    margin-right: 10px !important;
+
+    transition: transform 0.5s;
+}
+
+header .navbar .navbar-nav .instaIcon{
+    background-color: orangered;
+    border-radius: 50%;
+    color: white !important;
+
+    transition: transform 0.5s;
+}
+
+header .navbar .navbar-nav .wppIcon:hover{
+    transform: scale(1.2);
+}
+
+header .navbar .navbar-nav .instaIcon:hover{
+    transform: scale(1.2);
+}
+
+header .navbar .navbar-nav #links .nav-link:hover{
+    transition: 0.4s all ease-in;
+}
+
+.banner .row .col-sm-7 .img-fluid{
+    height: 100%;
+}
+
+.banner .row .col-sm-5{
+    background-color: #039232;
+
+    -webkit-box-shadow: inset -3px 3px 24px 5px rgba(0,0,0,0.75); 
+    box-shadow: inset -3px 3px 24px 5px rgba(0,0,0,0.75);
+
+    color: #FFFFFF;
+    text-shadow: 1px 3px 0 green, 1px 13px 5px black;
+}
+
+.banner .row .col-sm-5 p{
+    color: white !important;
+    font-family: 'Heebo', sans-serif !important;
+    font-family: 'Preahvihear', sans-serif !important;
+    border-radius: 10px;
+}
+
+/*** mobile ****/
+
+@media only screen and (max-width: 575.9px){
+
+    header .navbar{
+       justify-content: center;
+    }
+
+    header .navbar div form input{
+        width: 100%;
+    }
+
+    header .navbar .navbar-nav #links .nav-link{
+        padding: 5px;
+    }
+
+    header .navbar .navbar-nav div{
+        flex-direction: column !important;
+    }
+
+    header .navbar .navbar-nav #icons{
+        margin-top: 10px;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    header .navbar .navbar-nav #icons .wppIcon{
+        padding: 4px;
+        width: 44px;
+        text-align: center;
+        border-radius: 100%;
+
+    }
+
+    header .navbar .navbar-nav #icons .instaIcon{
+        padding: 4px;
+        width: 44px;
+        text-align: center;
+        border-radius: 100%;
+    }
+
+    .banner .row .col-sm-7 .img-fluid{
+        display: none;
+    }
+
+    .banner .row .col-sm-5{
+        background-image: url('../img/food.jpeg') !important;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .banner .row .col-sm-5 p{
+        font-size: 1.4rem;
+    }
+}
