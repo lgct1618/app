@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'SQR2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['produtos/tempaltes'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,7 +83,7 @@ DATABASES = {
         'NAME': 'lgct1618$emporiotaruma',
         "USER": "lgct1618",
         "PASSWORD": "mOARSEU!!1618",
-        "HOST": "lgct1618.mysql.pythonanywhere-services.com",
+        "HOST": "localhost",
         "PORT": "3306",
     }
 }

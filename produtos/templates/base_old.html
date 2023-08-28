@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Empório Tarumã </title>
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+        <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+        <link href="{% static 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap' %}" rel="stylesheet">
+        <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+        <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+        <link href="{% static 'https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="main_cabecalho">
+            <div class="logo"><img src="{% static 'logoemporiotaruma.png' %}" width="50%" height="50%"></div>
+        </header>
+        <nav class="box_links">
+            <ul>
+                <li><a href="{% url 'produtos:categorias' %}"> Categorias </a></li>
+                <li><a href="{% url 'produtos:index' %}"> Sobre </a></li>
+            </ul>
+        </nav>
+{% block content %}{% endblock %}
